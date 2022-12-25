@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nevbar {
+        background-color: aqua;
+    }
+
+    .nevbar ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nevbar ul li {
+        list-style: none;
+    }
+
+    .nevbar ul li a {
+        text-decoration: none;
+        position: relative;
+        padding: 30px 10px;
+    }
+
+    .nevbar ul li a::before {
+        position: absolute;
+        visibility: hidden;
+        background-color: #E5BF4A;
+        bottom: -10px;
+        top: 20px;
+        width: 0;
+        left: 20px;
+        transition: 2s;
+        content: "";
+        height: 2px;
+        cursor: pointer;
+
+    }
+
+    .nevbar ul li a:hover::before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .box {
+        border: 2px solid red;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        position: relative;
+
+    }
+
+    .box h2 {
+        position: absolute;
+        visibility: hidden;
+        cursor: pointer;
+        border: 2px solid red;
+        width: 100px;
+        height: 100px;
+    }
+
+    .box h2:hover {
+        visibility: visible;
+        color: #E5BF4A;
+    }
+</style>
+
+<body>
+    <div class="nevbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CAKES</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+
+    </div>
+    <div class="box">
+        <h2>flection</h2>
+        <p>dbjakbsuofhabsjfsf</p>
+
+    </div>
+</body>
+
+</html>
