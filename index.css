@@ -279,24 +279,33 @@ p {
 .latest-code {
     position: relative;
     width: 408px;
-    height: 408px;
+    height: 336px;
 }
 
 .trans {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 20%;
     transform: scaleY(0);
     transform-origin: bottom;
     transition: 1s;
     visibility: hidden;
-    opacity: 0.3;
+    opacity: 0.8;
     background-color: #E5BF4A;
+    top: 260px;
+    left: 0;
+    text-align: center;
 }
 
 .latest-code:hover .trans {
     transform: scaleY(1);
     visibility: visible;
+}
+
+.trans p {
+    margin-top: 20px;
+    color: #0A0A0A;
+    font-size: 16px;
 }
 
 /* .latest-code {
