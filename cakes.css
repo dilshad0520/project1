@@ -506,7 +506,9 @@ p {
     font-size: 40px;
 }
 
-.artical-main {}
+.artical-main {
+    padding-right: 10px;
+}
 
 .artical-main button {
     background: #E5BF4A;
@@ -983,6 +985,10 @@ visibility: hidden;
         font-size: 24px;
         padding: 0px 10px;
     }
+
+    /* .artical-main {
+        padding-right: 10px;
+    } */
 
     .aside-head h2 {
         font-size: 24px;

@@ -40,7 +40,7 @@ p {
 
 .container-fluid {
     max-width: 1435px;
-    padding: 0px 12px;
+    /* padding: 0px 12px; */
     margin: auto;
 }
 
@@ -250,7 +250,7 @@ p {
 
 .title-child p {
     color: #fff;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 15px;
@@ -293,12 +293,12 @@ p {
 .trans {
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 16%;
     transform: scaleY(0);
     transform-origin: bottom;
     transition: 1s;
     visibility: hidden;
-    opacity: 0.8;
+    opacity: 1;
     background-color: #E5BF4A;
     /* top: 0; */
     bottom: 0;
@@ -312,7 +312,7 @@ p {
 }
 
 .trans p {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #0A0A0A;
     font-size: 16px;
 }
@@ -503,7 +503,9 @@ p {
     font-size: 40px;
 }
 
-.artical-main {}
+.artical-main {
+    padding-right: 10px;
+}
 
 .artical-main button {
     background: #E5BF4A;
@@ -796,24 +798,17 @@ visibility: hidden;
     justify-content: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 40px;
+    text-align: center;
 }
 
 .footer-border p {
     color: #fff;
+    font-size: 14px;
 }
 
 .footer-border p i {
     color: #E5BF4A;
 }
-
-
-
-
-
-
-
-
-
 
 /* .mybox {
     min-width: 500px;
@@ -875,13 +870,17 @@ visibility: hidden;
         width: 100%;
     }
 
+    /* .latest-code {
+        width: 257px;
+    } */
+
     .trans {
         /* top: 251px; */
     }
 
     .header-main {
         flex-wrap: wrap;
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
 
     .header-left {
@@ -892,9 +891,14 @@ visibility: hidden;
         display: none;
     }
 
+    /* .header-center {
+        padding-left: 0px;
+        padding-right: 0px;
+    } */
+
     .title {
         flex-wrap: wrap;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .title-child {
@@ -905,16 +909,31 @@ visibility: hidden;
         display: none;
     }
 
+    .customer-parent .container {
+        padding: 0px 10px;
+    }
+
     .customer {
         width: 100%;
-        height: 400px;
+        height: 300px;
         background-position: unset;
         cursor: pointer;
     }
 
     .customer-item {
-        left: 30%;
-        top: 33%;
+        left: 36%;
+        top: 36%;
+        width: 70px;
+        height: 70px;
+    }
+
+    .customer-item i {
+        top: 28%;
+        left: 28px;
+    }
+
+    .customer-item::after {
+        border: 70px solid rgba(229, 191, 74, 0.2);
     }
 
     .footer-main {
